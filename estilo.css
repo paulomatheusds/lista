@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+
+}
+.course-list{
+    
+    display: flex; 
+    /* coloca itens lado a lado de forma flexível quase como o display block ou display list */
+    gap: 15px;
+    /* coloca espassamento entre os itens que estão lado a lado  */
+    flex-direction: row;
+    /* flex-direction: ; 
+    define o direcionamento dos itens flex lado a lado ou de cima para baixo
+    */
+    flex-wrap: wrap;
+    /* faz com que os itens flex se ajustem com o tamanho da tela, quando a tela é menor ele quebra os itens para baixo */
+    justify-content: center;
+    /* deixa o item centralizado na tela */
+    align-items: center;
+    /* não vai muda dependendo da altura do item pai se usar o heigth com tamanh vh ele ignora o item pai*/
+    height: 100vh;
+}
+
+/*  div.body.html todos com heigth de 100% */
+
+
+.curse-item{
+
+    background-color: white;
+    padding: 15px;
+    font-size: 22px;
+    width: 200px;
+    height: 150px;
+    border-top: solid 6px gray;
+    box-shadow: 2px 4px 5px 0 #bdbdbd; /* sombra da borda para pesquisar propriedades css no google coloca no inicio da pesquisa a sigla 'mdn' */
+    transition: 0.5s ease-in-out; /* é o tempo que o item faz a animação a ainmação está ativa no hover */
+    background-image: url(https://geracaotech.iel-ce.org.br/images/logo-geracao-2.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: bottom right;
+
+}
+.curse-item:first-child{
+    border-top: solid 6px #009681;
+    /* pseudo seletor first-child pega o primeiro elemento filho ou seja o primeiro item da class curse-item */
+
+}
+.curse-item:first-child:hover{
+    border-top: solid 6px black;
+}
+.curse-item:hover{
+    transform: translateY(-10px);
+    
+}
+
+/* https://geracaotech.iel-ce.org.br/images/logo-geracao-2.png */

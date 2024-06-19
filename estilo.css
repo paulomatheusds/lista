@@ -42,7 +42,7 @@ ul{
     transition: 0.5s ease-in-out; /* é o tempo que o item faz a animação a ainmação está ativa no hover */
     background-image: url(https://geracaotech.iel-ce.org.br/images/logo-geracao-2.png);
     background-repeat: no-repeat;
-    background-size: 150px;
+    background-size: 120px;
     background-position: bottom right;
 
 }

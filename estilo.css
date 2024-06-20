@@ -44,6 +44,7 @@ ul{
     background-repeat: no-repeat;
     background-size: 120px;
     background-position: bottom right;
+    position: relative;
 
 }
 .curse-item:first-child{
@@ -60,3 +61,15 @@ ul{
 }
 
 /* https://geracaotech.iel-ce.org.br/images/logo-geracao-2.png */
+
+.curse-item span{
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 3px;
+    position: absolute; /* dentro de um elemento você consegue quebrar o layout padrão e definir a posição de qualquer elemento na página obs: para o elemento respeitar a posição interna de outro, o seguinte deve estar com posição reltiva então o curse-item acima está em relativo*/
+    top: -10px;
+    right: 0px;
+}
